@@ -24,5 +24,7 @@ if score <=80:
 else:
   print(f"Your password {pass_checker(password,score)} is stronger!!")
   
+
+  
   
   
