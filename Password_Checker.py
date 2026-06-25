@@ -10,9 +10,9 @@ def pass_checker(password,score):
     score+=20
   if  any(char.isdigit()for char in password):
     score+=20
-  if any(char.lower() for char in password):
+  if any(char.islower() for char in password):
     score+=20
-  if any(char.upper() for char in password):
+  if any(char.isupper() for char in password):
     score+=20
   if any(char in forbidden for char in password):
     score -=20
