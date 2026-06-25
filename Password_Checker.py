@@ -6,7 +6,7 @@ def pass_checker(password,score):
   symbols = '@,#,$'
   if len(password) >=8 :
     score+=20
-  if  any (char in symbols for char in password):
+  if  any (char in symbols for char in password): # this is called a generator expression
     score+=20
   if  any(char.isdigit()for char in password):
     score+=20
@@ -18,7 +18,7 @@ def pass_checker(password,score):
     score -=20
   return score
   
-
+#Print the score and tell password is strong or not.
 if score <=80:
   print(f"your password {pass_checker(password,score)}% only please make is stronger")
 else:
