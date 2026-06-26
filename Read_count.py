@@ -9,7 +9,7 @@ def count_word_frequency(file_path):
     for line in file:
       words = line.split()
       #Looping over the words 
-      for word in words:
+      for words in word:
         word = word.lower().strip('.,!?;:"\'')
         #Calculate the word count
         word_count[word]= word_count.get(word,0)+1
