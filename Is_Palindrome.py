@@ -1,7 +1,7 @@
 #Check whether the given string is palindrome or not .
 targetword = input("Enter the word: ")
 def is_palindrome(targetword):
-  targetword.lower().replace(" "," ")
+  targetword=targetword.lower().replace(" "," ")
   temp =""
   for i in targetword:
     temp = i+temp
